@@ -49,3 +49,7 @@ type Reference struct {
     URI, Token string
 }
 ```
+
+### credits
+
+Inspired by https://github.com/JackDanger/collectlinks
