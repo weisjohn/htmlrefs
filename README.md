@@ -24,6 +24,21 @@ func main() {
 }
 ```
 
+### output
+
+```
+$ go run example-htmlrefs.go
+link : /favicon.ico
+link : /css/main.css
+a : /
+a : /talks
+a : /projects
+a : http://www.clevertech.biz/
+a : /talks
+a : /projects
+script : /components/jquery/dist/jquery.min.js
+script : /components/bootstrap/dist/js/bootstrap.min.js
+```
 
 ### struct
 
