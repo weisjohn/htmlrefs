@@ -24,7 +24,7 @@ func main() {
 
 ### struct
 
-`htmlrefs` returns a slice 
+`htmlrefs` returns a slice of `Reference`s
 
 ```
 type Reference struct {
