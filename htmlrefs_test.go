@@ -59,8 +59,9 @@ func TestAll(t *testing.T) {
 	// get the refs from the implementation
 	refs := All(reader)
 
-	if len(refs) != len(reqs) {
-		t.Error("Wrong number of refs returned")
+	need, have := len(reqs), len(refs)
+	if need != have {
+		t.Errorf("Wrong number of refs returned. need: %d , have: %d", need, have)
 	}
 
 	for i := 0; i < len(reqs); i++ {
