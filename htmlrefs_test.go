@@ -65,12 +65,16 @@ func TestAll(t *testing.T) {
 		t.Errorf("Wrong number of refs returned. need: %d , have: %d", need, have)
 	}
 
-	for i := 0; i < len(reqs); i++ {
-		uri := reqs[i].URI
+	// loop through and verify URI and Token names
+	for i, req := range reqs {
 		ref := refs[i]
 
-		if uri != ref {
-			t.Errorf("Mismatch URI detected. need: %s , have: %s", uri, ref)
+		if req.URI != ref.URI {
+			t.Errorf("Mismatch URI detected. need: %s , have: %s", req.URI, ref.URI)
+		}
+
+		if req.Token != ref.Token {
+			t.Errorf("Mismatch Token detected. need: %s , have: %s", req.Token, ref.Token)
 		}
 	}
 }
