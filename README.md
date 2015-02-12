@@ -1,6 +1,6 @@
 # htmlrefs
 
-Package htmlrefs returns a slice of `Reference{URI,Token string}`s from an `io.Reader`.
+Package htmlrefs returns a slice of `Reference{URI, Token string}`s from an `io.Reader`.
 
 ### usage
 
