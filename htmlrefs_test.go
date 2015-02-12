@@ -29,28 +29,28 @@ func TestAll(t *testing.T) {
 	reader := strings.NewReader(`
 		<!DOCTYPE html>
 		<html>
-		<head>
-			<title>example</title>
-			<link rel="icon" href="/favicon.ico">
-			<link rel="stylesheet" type="text/css" href="/foo.css">
-			<script type="text/javascript" async="async" src="/async.js"></script>
-			<script type="text/javascript" src="/foo.js"></script>
-		</head>
-		<body>
-			<a href="/relative"></a>
-			<a href="http://example.com/absolute"></a>
-			<a href="//google.com/protocol-relative"></a>
-			<a href="#yep"></a>
-			<img src="/sample.jpg">
-			<picture>
-			   <source type="image/svg+xml" srcset="/logo.svg" />
-			   <source type="image/webp" srcset="/logo.webp" />
-			   <source type="image/png" srcset="/logo.png" />
-			   <img src="/logo.gif" alt="Company logo" />
-			</picture>
-			<p>nope</p>
-			<video src="/vid.mp4"></video>
-		</body>
+			<head>
+				<title>example</title>
+				<link rel="icon" href="/favicon.ico">
+				<link rel="stylesheet" type="text/css" href="/foo.css">
+				<script type="text/javascript" async="async" src="/async.js"></script>
+				<script type="text/javascript" src="/foo.js"></script>
+			</head>
+			<body>
+				<a href="/relative"></a>
+				<a href="http://example.com/absolute"></a>
+				<a href="//google.com/protocol-relative"></a>
+				<a href="#yep"></a>
+				<img src="/sample.jpg">
+				<picture>
+				   <source type="image/svg+xml" srcset="/logo.svg" />
+				   <source type="image/webp" srcset="/logo.webp" />
+				   <source type="image/png" srcset="/logo.png" />
+				   <img src="/logo.gif" alt="Company logo" />
+				</picture>
+				<p>nope</p>
+				<video src="/vid.mp4"></video>
+			</body>
 		</html>
 	`)
 
