@@ -17,7 +17,10 @@ import (
 func main() {
     resp, _ := http.Get("http://johnweis.com")
     refs := htmlrefs.All(resp.Body)
-    fmt.Println(refs)
+
+    for _, ref := range refs {
+        fmt.Println(ref.Token, ":", ref.URI)
+    }
 }
 ```
 
