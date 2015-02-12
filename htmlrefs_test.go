@@ -35,12 +35,14 @@ func TestAll(t *testing.T) {
 				<link rel="stylesheet" type="text/css" href="/foo.css">
 				<script type="text/javascript" async="async" src="/async.js"></script>
 				<script type="text/javascript" src="/foo.js"></script>
+				<script></script>
 			</head>
 			<body>
 				<a href="/relative"></a>
 				<a href="http://example.com/absolute"></a>
 				<a href="//google.com/protocol-relative"></a>
 				<a href="#yep"></a>
+				<a name="yep">yep</a>
 				<img src="/sample.jpg">
 				<picture>
 				   <source type="image/svg+xml" srcset="/logo.svg" />
