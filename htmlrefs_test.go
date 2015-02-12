@@ -17,7 +17,7 @@ func TestAll(t *testing.T) {
 		{URI: "http://example.com/absolute", Token: "a"},
 		{URI: "//google.com/protocol-relative", Token: "a"},
 		{URI: "#yep", Token: "a"},
-		{URI: "/sample.jpg", Token: "a"},
+		{URI: "/sample.jpg", Token: "img"},
 		{URI: "/logo.svg", Token: "source"},
 		{URI: "/logo.webp", Token: "source"},
 		{URI: "/logo.png", Token: "source"},
