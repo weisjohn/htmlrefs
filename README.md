@@ -26,7 +26,7 @@ func main() {
 
 ### output
 
-```
+```bash
 $ go run example-htmlrefs.go
 link : /favicon.ico
 link : /css/main.css
@@ -44,7 +44,7 @@ script : /components/bootstrap/dist/js/bootstrap.min.js
 
 `htmlrefs` returns a slice of `Reference`s
 
-```
+```go
 type Reference struct {
     URI, Token string
 }
